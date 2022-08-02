@@ -1,14 +1,34 @@
 import java.text.DecimalFormat;
 
 public class Aluno {
-    String nome;
-    double nota1;
-    double nota2;
-    double nota3;
+    private String nome;
+    private double nota1;
+    private double nota2;
+    private double nota3;
 
     DecimalFormat df = new DecimalFormat("#,###.00");
     public Aluno(String nome) {
         this.nome = nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public double getNota1() {
+        return this.nota1;
+    }
+
+    public double getNota2() {
+        return this.nota2;
+    }
+
+    public double getNota3() {
+        return nota3;
     }
 
     public void adicionarNota(double nota, int nrProva) {
